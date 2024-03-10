@@ -1,13 +1,7 @@
 import IApi from './IApi';
 import ApiResponse from "./entities/ApiResponse";
 import IUser from "../entities/IUser";
-import {ApiGetUsersResponse} from "./entities";
-import {
-  mapApiPositionsToIPositions,
-  mapApiUsersToIUsers,
-  mapApiUserToIUser,
-  mapISignUpRequestToApiSignUpRequest
-} from "./mappers";
+import {mapApiPositionsToIPositions, mapApiUsersToIUsers, mapISignUpRequestToApiSignUpRequest} from "./mappers";
 import {IPosition, ISignUpRequest} from "../entities";
 
 export default class Api implements IApi {
