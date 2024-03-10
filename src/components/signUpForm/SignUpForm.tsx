@@ -73,8 +73,6 @@ export default function SignUpForm() {
     errors,
     setFieldValue,
   }: FormikProps<IForm>) {
-    console.log('renderForm',{values, errors});
-
     return (
       <Form>
         <InputField
