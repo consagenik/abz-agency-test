@@ -1,0 +1,11 @@
+.radioFieldsGroup {
+  .label {
+    margin-bottom: 10px;
+  }
+
+  .fieldsList {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+}

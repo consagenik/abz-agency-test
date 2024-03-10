@@ -1,0 +1,28 @@
+@import "../../../variables";
+
+.radioButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  border-radius: 10px;
+  border: 1px solid $secondGreyColor;
+  box-sizing: border-box;
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  &.checked {
+    border: 1px solid $blueColor;
+
+    .circle {
+      background-color: $blueColor;
+    }
+  }
+}

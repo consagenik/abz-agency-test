@@ -1,0 +1,56 @@
+@import "../../../variables";
+
+.uploadPhotoField {
+  color: $blackColor;
+
+  .uploadPhotoFieldWrapper {
+    display: flex;
+  }
+
+  input {
+    display: none;
+  }
+
+  button, label {
+    cursor: pointer;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-width: unset;
+    height: 54px;
+    padding: 0 15px;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent;
+    border: 1px solid $blackColor;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  label {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: 54px;
+    padding: 0 16px;
+    border: 1px solid $secondGreyColor;
+    box-sizing: border-box;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+
+    .selectedFile {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &.withPlaceholder {
+        color: #7E7E7E;
+      }
+    }
+  }
+}

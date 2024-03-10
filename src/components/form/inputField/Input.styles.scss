@@ -1,0 +1,61 @@
+@import "../../../variables";
+
+.inputWrapper {
+  height: 104px;
+
+  input {
+    width: 100%;
+    height: 54px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid $secondGreyColor;
+    padding: 0 16px;
+    box-sizing: border-box;
+    color: $blackColor;
+    background-color: transparent;
+    transition: 0.1s ease-out;
+
+    &::placeholder {
+      color: #7E7E7E;
+    }
+  }
+
+  .inputField {
+    height: 54px;
+  }
+
+  .material-textfield {
+    position: relative;
+  }
+
+  label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $greyColor;
+    color: gray;
+    padding: 0 4px;
+    margin-left: 12px;
+    transition: 0.1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+
+  input:focus+label {
+    line-height: 14px;
+    top: 0;
+    transform: translateY(-50%) scale(0.75) !important;
+  }
+
+  input:not(:placeholder-shown)+label {
+    line-height: 14px;
+    top: 0;
+    transform: translateY(-50%) scale(0.75) !important;
+  }
+
+  input::placeholder {
+    opacity: 0;
+  }
+}

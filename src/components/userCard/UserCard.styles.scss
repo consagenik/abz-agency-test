@@ -1,0 +1,38 @@
+.userCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+
+  .userPhotoWrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .additionalInformation {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

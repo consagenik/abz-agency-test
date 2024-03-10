@@ -1,0 +1,39 @@
+#usersSection {
+  padding: 140px 16px 0;
+  box-sizing: border-box;
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .usersList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: 600px) {
+    padding: 140px 32px 0;
+
+    .usersList {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 16px;
+    }
+  }
+
+  @media (min-width: 896px) {
+    padding: 140px 60px 0;
+
+    .usersList {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 29px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    padding: 140px 0 0;
+  }
+}

@@ -1,0 +1,5 @@
+export {default as Logo} from './Logo.svg'
+export {default as HeroBG} from './HeroBG.jpeg'
+export {default as HeroBGPlaceholder} from './HeroBGPlaceholder.jpg'
+export {default as DefaultAvatar} from './DefaultAvatar.svg'
+export {default as SuccessImage} from './SuccessImage.svg'
